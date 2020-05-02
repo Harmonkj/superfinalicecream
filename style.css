@@ -1,58 +1,206 @@
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: gray;
 }
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar a:hover, .dropdown:hover, .dropbtn {
-  background-color: red;
+.button_1{
+  height: 38px;
+  background: #ff80bf;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.dark {
+  padding: 15px;
+  background: red;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-.dropdown-content a {
-  float: none;
+/* Header */
+header {
+  background: lightgray;
   color: black;
-  padding: 12px 16px;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #ff80bf 8px solid;
+}
+
+header a {
+  color: black;
   text-decoration: none;
-  display: block;
-  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+header #branding {
+  float: left;
 }
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #ff80ff;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url('http://www.mvminfotech.com/blog/wp-content/uploads/1920x1200-3.jpg.png') no-repeat ;
+ text-align: center;
+ color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top:100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* newsletter */
+#newsletter {
+  padding: 15px;
+  color: black;
+  background: lightgray;
+}
+
+#newsletter h1 {
+ float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* boxes*/
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+/*Main-col*/
+article#main-col {
+  float: left;
+  width: 65%;  
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #ff80bf;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  header #branding, 
+  header nav,
+  header nav li,
+  #newlsetter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+  
+  header {
+   padding-bottom: 20px; 
+  }
+  
+  #showcase h1 {
+    margin-top: 40px;
+  }
+  
+  #newletter button, .quote button {
+    dislplay: block;
+    width: 100%;
+  }
+  
+  #newsletter form input[type="email"], .quote input, .quote textarea {
+   width: 100%;
+   margin-bottom: 20px
+  }
+}
+
