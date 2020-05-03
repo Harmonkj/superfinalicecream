@@ -119,7 +119,7 @@ header a:hover{
 
 img{
   float: right;
-  position: absolute;
+  position: fixed;
   left: 1400px;
   top: 322px;
 }
