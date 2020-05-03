@@ -34,7 +34,7 @@ ul {
 }
 /* Header */
 header {
-  background: lightgray;
+  background: #bfbfbf;
   color: black;
   padding-top: 30px;
   min-height: 70px;
@@ -80,8 +80,7 @@ header a:hover{
 
 /* Showcase */
 #showcase {
-  min-height: 400px;
-  background: url('http://www.mvminfotech.com/blog/wp-content/uploads/1920x1200-3.jpg.png') no-repeat ;
+  min-height: 400px;,
  text-align: center;
  color: #ffffff;
 }
@@ -117,6 +116,14 @@ header a:hover{
   height: 25px;
   width: 250px;
 }
+
+img{
+  float: right;
+  position: absolute;
+  left: 900px;
+  top: 322px;
+}
+
 
 /* boxes*/
 #boxes {
@@ -159,7 +166,7 @@ ul#services li {
   padding: 20px;
   border: #cccccc solid 1px;
   margin-bottom: 5px;
-  background: #e6e6e6;
+  background: #bfbfbf;
 }
 
 /* footer */
