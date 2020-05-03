@@ -140,7 +140,7 @@ article#main-col {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: auto auto;
-  background-color: #ffffff;
+  background-color: #33cccc;
   padding: 10px;
 }
 
