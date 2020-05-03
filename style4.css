@@ -4,6 +4,43 @@ body{
   margin: 0;
   background-color: #c2f0f0;
 }
+/* Showcase */
+#showcase {
+  min-height: 400px;,
+ text-align: center;
+ color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top:100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+#newsletter {
+  padding: 15px;
+  color: black;
+  background: #bfbfbf;
+}
+
+#newsletter h1 {
+ float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
 /* Global */
 .container{
   width: 80%;
@@ -101,7 +138,7 @@ article#main-col {
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
+  grid-column-gap: 10px;
   grid-template-columns: auto auto;
   background-color: #ffffff;
   padding: 10px;
@@ -109,12 +146,44 @@ article#main-col {
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 40px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 30px;
   text-align: center;
 }
 
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+}
+.content_img:hover{
+ cursor: pointer;
+}
+/* Parent Container */
+.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-right: 10px;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
 /* footer */
 footer {
   padding: 20px;
@@ -138,15 +207,17 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
+  grid-column-gap: 0px;
   grid-template-columns: auto auto;
   background-color: #ffffff;
   padding: 10px;
+  height: 700px;
 }
 
 .grid-item {
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 30px;
   text-align: center;
